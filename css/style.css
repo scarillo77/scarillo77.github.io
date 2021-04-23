@@ -22,6 +22,6 @@ header img {
   height: auto;
 }
 
-footer a {
+footer a:visited {
   color: white;
 }
