@@ -174,16 +174,6 @@ footer p {
   /* end of media query */
 }
 
-.card {
-  width: 320px;
-  box-shadow: 1px 1px 4px 1px #888;
-  border-radius: 6px 6px 6x 6px;
-  padding: 10px;
-  background-color: white;
-  float: right;
-  margin: 0;
-}
-
 h5 {
   font-family: "Arial", sans-serif;
   border-top: 5px double;
