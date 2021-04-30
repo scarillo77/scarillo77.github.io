@@ -18,7 +18,7 @@ footer {
 }
 
 h1 {
-  color: #fff;
+  color: red;
 }
 
 footer a:visited {
@@ -28,4 +28,8 @@ footer a:visited {
 .profile {
   width: 400px;
   height: auto;
+}
+
+main {
+  display: grid;
 }
