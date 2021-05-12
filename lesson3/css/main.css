@@ -32,6 +32,13 @@ h2 {
   color: darkblue;
 }
 
+img {
+  float: right;
+  width: 200px;
+  height: auto;
+}
+
+
 nav {
   background-color: #36454f;
   text-align: center;
