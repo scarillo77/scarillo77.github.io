@@ -9,12 +9,19 @@ body {
 header,
 footer {
   background-color: orange;
-  display: flex;
-	flex-flow: column;
-	align-items: center;
-	justify-content: center;
-	padding: 10px;
+  padding: 1rem;
   border: 1px solid red;
+}
+
+header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  height: auto;
 }
 
 header,
@@ -37,7 +44,6 @@ img {
   width: 200px;
   height: auto;
 }
-
 
 nav {
   background-color: #36454f;
