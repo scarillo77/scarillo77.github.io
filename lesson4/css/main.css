@@ -35,7 +35,7 @@ header img {
   font-size: 1.6rem;
   margin: 0 0 0 17px;
   font-family: "Times New Roman", Times, serif;
-  color: green;
+  color: blue;
 }
 
 h2 {
@@ -45,7 +45,7 @@ h2 {
 .m {
   font-style: italic;
   letter-spacing: 1pt;
-  color: forestgreen;
+  color: darkblue;
   margin-left: 20px;
   font-size: 0.9rem;
 }
