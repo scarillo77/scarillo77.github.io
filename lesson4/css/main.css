@@ -39,13 +39,13 @@ header img {
 }
 
 h2 {
-  color: blue;
+  color: darkblue;
 }
 
 .m {
   font-style: italic;
   letter-spacing: 1pt;
-  color: darkblue;
+  color: blue;
   margin-left: 20px;
   font-size: 0.9rem;
 }
