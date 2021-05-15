@@ -34,6 +34,17 @@ header img {
   height: auto;
 }
 
+main article {
+    margin: 0.5rem;
+    border: 1px solid #bbb;
+    padding: 0 1rem;
+    background-color: #eee;
+  }
+  main picture {
+    display: none;
+    margin: 0.5rem;
+  }
+
 .headings {
   display: flex;
   flex-direction: column;
