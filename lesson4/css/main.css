@@ -63,12 +63,11 @@ h2 {
 }
 
 .m {
-  font-style: italic;
   font-family: "Times New Roman", Times, serif;
   letter-spacing: 1pt;
-  color: darkgreen;
+  color: darkblue;
   margin-left: 20px;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 footer {
