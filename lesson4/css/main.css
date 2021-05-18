@@ -64,8 +64,9 @@ h2 {
 
 .m {
   font-style: italic;
+  font-family: "Times New Roman", Times, serif;
   letter-spacing: 1pt;
-  color: darkblue;
+  color: darkgreen;
   margin-left: 20px;
   font-size: 0.9rem;
 }
