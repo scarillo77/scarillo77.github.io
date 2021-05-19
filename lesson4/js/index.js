@@ -1,5 +1,3 @@
-document.querySelector("#lastmod").textContent = document.lastModified;
-
 let date = new Date();
 let year = date.getFullYear();
 
@@ -15,3 +13,12 @@ hambutton.addEventListener("click", () =>
 window.onresize = () => {
   if (window.innerWidth > 760) mainnav.classList.remove("responsive");
 };
+
+const datefield = document.querySelector("date");
+
+const now = new Date();
+const fulldate = new Intl.DateTimeFormat("en-US" , { dateStyle: "full"}).format (
+ now
+);
+
+datefield.textContent = fulldate;
