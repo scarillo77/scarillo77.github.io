@@ -15,10 +15,9 @@ header {
 }
 
 header,
-nav,
 main,
 footer {
-  max-width: 7670px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -76,10 +75,9 @@ footer {
 }
 
 header,
-nav,
 main,
 footer {
-  max-width: 7670px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -97,7 +95,7 @@ main picture {
 /* Small/Phone View ***************/
 nav {
   margin: 0 auto;
-  max-width: 760px;
+  max-width: 960px;
   background-color: tomato;
 }
 .navigation {
