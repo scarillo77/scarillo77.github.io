@@ -1,7 +1,7 @@
 /* Larger viewports */
 @media only screen and (min-width: 80em) {
     header img {
-      width: 100%;
+      width: 200px;
     }
   
     .headings h1 {

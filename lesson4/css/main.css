@@ -81,12 +81,6 @@ footer {
   margin: 0 auto;
 }
 
-img {
-  float: right;
-  width: 200px;
-  height: auto;
-}
-
 main picture {
   display: none;
   margin: 0.5rem;
