@@ -5,12 +5,23 @@ let year = date.getFullYear();
 
 document.querySelector("#theyear").textContent = year;
 
-const input = document.querySelector("#input");
-
-const button = document.querySelector("submit");
-
-const output = document.querySelector("#list");
+const fav = document.querySelector("#fav");
+const button = document.querySelector("button");
+const output = document.querySelector(".list");
 
 button.addEventListener("click", () => {
-  let li = document.createElement("list");
+  if (fav.value != "") {
+    let li = document.createElement("li");
+    let deletebutton = document.createElement("button");
+    li.textContent = fav.value;
+    deletebutton.textContent = "❌";
+    li.append(deletebutton);
+    output.append(li);
+    deletebutton.addEventListener("click", function () {
+      output.removeChild(li);
+      fav.focus;
+    });
+    fav.value = "";
+    fav.focus;
+  }
 });
