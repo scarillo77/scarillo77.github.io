@@ -43,9 +43,12 @@ main article {
   padding: 0 1rem;
   background-color: #eee;
 }
-main picture {
-  display: none;
+main img {
+  display: block;
   margin: 0.5rem;
+  width: 100%;
+  height: auto;
+  border: 1px solid #bbb;
 }
 
 .headings {
@@ -145,9 +148,4 @@ p {
   padding: 1.5rem;
   box-shadow: 0 0 30px #333;
   opacity: 0.9;
-}
-
-article img {
-  width: 80px;
-  height: auto;
 }
