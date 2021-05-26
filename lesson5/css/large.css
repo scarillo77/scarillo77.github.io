@@ -13,5 +13,9 @@
       font-size: larger;
       margin-left: 17px;
     }
+
+    article img {
+      width: 600px;
+      margin: 0 auto;
+    }
   }
-  
