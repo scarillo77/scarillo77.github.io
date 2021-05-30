@@ -51,15 +51,22 @@
     <main>
       <div class="weatherdetails">
         <picture>
-          <source media="(min-width: )" srcset="images/hero-small.jpg">
+          <source media="(min-width: 500px)" srcset="images/hero-small.jpg" />
+          <source media="(min-width: 800px )" srcset="images/hero-medium.jpg" />
+          <img src="images/hero-large.jpg" alt="Hero" />
         </picture>
         <section class="weathersummary">
           <h2>Weather Summary</h2>
-          <p>Currently: Sunny</p>
-          <p>High: 76</p>
-          <p>Wind Chill: 55</p>
-          <p>Humidity: 69</p>
-          <p>Wind Speed: 5 mph</p>
+          <p class="label">Currently:</p>
+          <p class="value">Broken Clouds</p>
+          <p class="label">Temperature</p>
+          <p class="value"><span id="temp">61</span>&deg;F</p>
+          <p class="label">Humidity:</p>
+          <p class="value">60%</p>
+          <p class="label">Wind Speed:</p>
+          <p class="value">6 mph</p>
+          <p class="label">Wind Chill:</p>
+          <p class="value"><span id="windchill"></span>&deg;F</p>
         </section>
       </div>
       <article>
