@@ -43,6 +43,7 @@ article {
   padding: 0 1rem;
   background-color: #eee;
   height: auto;
+  clear: both ;
 }
 
 .article img {
