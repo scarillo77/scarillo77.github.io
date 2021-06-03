@@ -13,4 +13,8 @@
       font-size: larger;
       margin-left: 17px;
     }
+    
+    main img {
+      float:right;
+    }
   }

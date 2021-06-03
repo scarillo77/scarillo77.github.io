@@ -37,15 +37,17 @@ aside {
   display: none;
 }
 
-main article {
+article {
   margin: 0.5rem;
   border: 1px solid #bbb;
   padding: 0 1rem;
   background-color: #eee;
+  height: auto;
 }
-main img {
+
+.article img {
   display: block;
-  margin: 0.5rem;
+  margin: auto;
   width: 100%;
   height: auto;
   border: 1px solid #bbb;
@@ -148,4 +150,16 @@ p {
   padding: 1.5rem;
   box-shadow: 0 0 30px #333;
   opacity: 0.9;
+}
+
+table,th,td {
+	border: 1px solid #333;
+	border-collapse: collapse;
+	padding: 5px;
+}
+
+td {
+	background-color: #bad;
+	font-size: 0.8rem;
+	text-align: center;
 }
