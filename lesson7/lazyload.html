@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Lazy Loading Examples</title>
+    <meta name="description" content="Examples of lazy loading" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap"
+    />
+    <link rel="stylesheet" href="css/lazyload.css" />
+  </head>
+
+  <body>
+      <h1>Progressive Loading (Images)</h1>
+      <main>
+        <picture>
+            <img src="https://via.placeholder.com/300/400" data-src="https://placeimg.com/300/400/nature" alt="nature">
+        </picture>
+        <picture>
+            <img src="https://via.placeholder.com/300/400" data-src="https://placeimg.com/300/400/animals" alt="animals">
+        </picture>
+        <picture>
+            <img src="https://via.placeholder.com/300/400" data-src="https://placeimg.com/300/400/architecture" alt="architecture">
+        </picture>
+        <picture>
+            <img src="https://via.placeholder.com/300/400" data-src="https://placeimg.com/300/400/tech" alt="tech">
+        </picture>
+        <picture>
+            <img src="https://via.placeholder.com/300/400" data-src="https://placeimg.com/300/400/people" alt="people">
+        </picture>
+
+      </main>
+    <script src="js/imagehandling.js"></script>
+  </body>
+</html>
