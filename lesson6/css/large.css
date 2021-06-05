@@ -13,11 +13,4 @@
     font-size: larger;
     margin-left: 17px;
   }
-
-  .article img {
-    width: 300px;
-    height: auto;
-    float: right;
-    clear: both ;
-  }
 }

@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
     <script defer src="js/index.js"></script>
+    <script defer src="js/windchill.js"></script>
   </head>
   <body>
     <aside id="banner">
@@ -51,26 +52,61 @@
     <main>
       <div class="weatherdetails">
         <picture>
-          <source media="(min-width: 500px)" srcset="images/hero-small.jpg" />
-          <source media="(min-width: 800px )" srcset="images/hero-medium.jpg" />
-          <img src="images/hero-large.jpg" alt="Hero" />
+          <source media="(min-width: 760px )" srcset="images/hero-large.jpg" />
+          <source media="(min-width: 500px)" srcset="images/hero-medium.jpg" />
+          <img src="images/hero-small.jpg" alt="Hero" />
         </picture>
         <section class="weathersummary">
           <h2>Weather Summary</h2>
           <p class="label">Currently:</p>
           <p class="value">Broken Clouds</p>
           <p class="label">Temperature</p>
-          <p class="value"><span id="temp">61</span>&deg;F</p>
+          <p class="value"><span id="temp">50</span>&deg;F</p>
           <p class="label">Humidity:</p>
           <p class="value">60%</p>
           <p class="label">Wind Speed:</p>
-          <p class="value">6 mph</p>
+          <p class="value"><span id="speed">6</span>mph</p>
           <p class="label">Wind Chill:</p>
           <p class="value"><span id="windchill"></span>&deg;F</p>
         </section>
       </div>
       <article>
-        <img src="images/5day.png" alt="5 Day Forecast" />
+        <h2>Table</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Saturday</th>
+              <th>Sunday</th>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img src="images/cloudy.jpg" alt="weather" /><br />
+                89 &deg;F
+              </td>
+              <td>
+                <img src="images/cloudy.jpg" alt="weather" /><br />
+                88 &deg;F
+              </td>
+              <td>
+                <img src="images/cloudy.jpg" alt="weather" /><br />
+                89 &deg;F
+              </td>
+              <td>
+                <img src="images/cloudy.jpg" alt="weather" /><br />
+                89 &deg;F
+              </td>
+              <td>
+                <img src="images/cloudy.jpg" alt="weather" /><br />
+                88 &deg;F
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </article>
       <div class="article">
         <article>

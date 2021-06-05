@@ -1,14 +1,14 @@
-let wc = windchill + "deg;F";
+let temp = document.querySelector("#temp").textContent;
+let speed = document.querySelector("#speed").textContent;
+let windchill = "N/A";
 
-document.querySelector(".").innerHTML = wc;
-
-let temp = doc.querySelector
-let speed = doc.querySelector
-
-if (meet conditions compound) {
-    call windChill(temp, speed)
+if (temp <= 50 && speed > 3) {
+  windchill = windChill(temp, speed);
 }
 
+document.querySelector("#windchill").innerHTML =
+  windchill;
+
 function windChill(t, s) {
-    return Math.pow(t,2)
+  return Math.pow(t, 2);
 }
