@@ -164,3 +164,9 @@ td {
 	font-size: 0.8rem;
 	text-align: center;
 }
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 0.8rem;
+}
