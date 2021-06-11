@@ -169,5 +169,6 @@ td {
 main {
   display: grid;
   grid-template-columns: 1fr;
+  text-align: center;
   font-size: 0.8rem;
 }
