@@ -13,4 +13,14 @@
     font-size: larger;
     margin-left: 17px;
   }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 0.8rem;
+  }
+
+  .norm:hover {
+    box-shadow: 0 0 50px #333;
+  }
 }
