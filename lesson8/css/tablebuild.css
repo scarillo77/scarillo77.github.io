@@ -42,8 +42,7 @@ tfoot tr td {
   font-style: italic;
 }
 
-tbody tr th:hover,
-tbody tr td:hover {
+.highlight {
   background-color: #628ca6;
   color: white;
 }
