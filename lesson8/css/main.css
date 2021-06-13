@@ -14,7 +14,12 @@ label {
 
 input,
 label {
-  margin: .4rem 0;
+  margin: 0.4rem 0;
+}
+
+.flexly {
+  display: flex;
+  align-items: center;
 }
 
 header {
@@ -144,7 +149,6 @@ nav {
   width: 100%;
 }
 
-
 h2,
 h3,
 p {
@@ -163,14 +167,16 @@ p {
   display: grid;
 }
 
-table,th,td {
-	border: 1px solid #333;
-	border-collapse: collapse;
-	padding: 5px;
+table,
+th,
+td {
+  border: 1px solid #333;
+  border-collapse: collapse;
+  padding: 5px;
 }
 
 td {
-  background-color:lightblue;
-	font-size: 0.8rem;
-	text-align: center;
+  background-color: lightblue;
+  font-size: 0.8rem;
+  text-align: center;
 }
