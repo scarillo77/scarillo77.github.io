@@ -20,13 +20,8 @@
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
     <script defer="" src="js/index.js"></script>
-    <script defer="" src="js/windchill.js"></script>
   </head>
   <body>
-    <aside id="banner">
-      Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
-      park pavilion.
-    </aside>
     <header>
       <picture>
         <img src="images/weather.png" alt="Idaho Weather Logo" />
@@ -49,92 +44,13 @@
     </nav>
 
     <main>
-      <div class="weatherdetails">
-        <picture>
-          <source media="(min-width: 760px )" srcset="images/hero-large.jpg" />
-          <source media="(min-width: 500px)" srcset="images/hero-medium.jpg" />
-          <img src="images/hero-small.jpg" alt="Hero" />
-        </picture>
-        <section class="weathersummary">
-          <h2>Weather Summary</h2>
-          <p class="label">Currently:</p>
-          <p class="value">Broken Clouds</p>
-          <p class="label">Temperature</p>
-          <p class="value"><span id="temp">50</span>°F</p>
-          <p class="label">Humidity:</p>
-          <p class="value">60%</p>
-          <p class="label">Wind Speed:</p>
-          <p class="value"><span id="speed">6</span>mph</p>
-          <p class="label">Wind Chill:</p>
-          <p class="value"><span id="windchill">2500</span>°F</p>
-        </section>
-      </div>
-      <article>
-        <h2>Table</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Saturday</th>
-              <th>Sunday</th>
-              <th>Monday</th>
-              <th>Tuesday</th>
-              <th>Wednesday</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <img src="images/cloudy.jpg" alt="weather" /><br />
-                89 °F
-              </td>
-              <td>
-                <img src="images/cloudy.jpg" alt="weather" /><br />
-                88 °F
-              </td>
-              <td>
-                <img src="images/cloudy.jpg" alt="weather" /><br />
-                89 °F
-              </td>
-              <td>
-                <img src="images/cloudy.jpg" alt="weather" /><br />
-                89 °F
-              </td>
-              <td>
-                <img src="images/cloudy.jpg" alt="weather" /><br />
-                88 °F
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </article>
-      <div class="article">
-        <article>
-          <h2>Article</h2>
-          <img src="images/rain.png" alt="Idaho rain" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            libero quibusdam quidem adipisci non eligendi nemo sunt sapiente
-            dolores omnis? Molestiae laboriosam necessitatibus officiis
-            recusandae tempora unde aspernatur tetur quis dolorum recusandae.
-            Godzilla vs. Kong was theatrically released internationally on March
-            24, 2021, and in the United States on March 31, where it was
-            released in theaters and on HBO Max simultaneously. The film
-            received generally positive reviews from critics, with praise for
-            the visual effects and action sequences, but criticism towards the
-            script and human characters. It broke several pandemic box office
-            records, and has grossed $436 million worldwide, against a
-            production budget between $155–200 million and a break-even point of
-            $330 million, making it the third highest-grossing film of 2021. The
-            film was also a streaming hit, becoming the most successful launch
-            item in HBO Max's history at the time of its release.
-          </p>
-        </article>
-      </div>
+      <div class="cards"></div>
     </main>
     <footer>
       © <span id="theyear">2021</span> | Spencer Carillo | Idaho |
       <a href="https://www.byui.edu/online">BYUI Online Learning</a>
       <p id="date">Saturday, June 19, 2021</p>
+      <script src="js/info.js"></script>
     </footer>
   </body>
 </html>
