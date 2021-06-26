@@ -15,7 +15,7 @@ fetch(requestURL)
       let image = document.createElement("img");
 
       h2.textContent = towns[i].name + " " + towns[i].motto;
-      image.src = towns[i].photos;
+      image.src = towns[i].photo;
       image.alt =
         towns[i].name + " " + towns[i].motto + " - " + towns[i].yearFounded;
 
