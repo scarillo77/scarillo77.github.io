@@ -11,16 +11,17 @@ fetch(requestURL)
       let card = document.createElement("section");
       let h2 = document.createElement("h2");
       let date = document.createElement("p");
-      let place = document.createElement("p");
+      let motto = document.createElement("p");
       let image = document.createElement("img");
 
-      h2.textContent = towns[i].name + " " + towns[i].motto;
+      h2.textContent = towns[i].name + " ";
+      motto.textContent = "Motto: " + towns[i].motto;
       image.src = towns[i].photo;
-      image.alt =
-        towns[i].name + " " + towns[i].motto + " - " + towns[i].yearFounded;
+      image.alt = towns[i].name + " ";
 
       card.appendChild(h2);
       card.appendChild(date);
+      card.appendChild(motto);
       card.appendChild(image);
       document.querySelector("div.cards").appendChild(card);
     }
