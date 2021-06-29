@@ -20,7 +20,7 @@ fetch(requestURL)
       let image = document.createElement("img");
       let yearP = document.createElement("p");
       let populationP = document.createElement("p");
-      let rainP = document.createElement("p");
+
 
       h3.textContent = weatherTowns[i].name;
       mottoP.textContent = weatherTowns[i].motto;
@@ -29,15 +29,13 @@ fetch(requestURL)
       yearP.textContent = "Founded in " + weatherTowns[i].yearFounded;
       populationP.textContent =
         "Population: " + weatherTowns[i].currentPopulation;
-      rainP.textContent =
-        "Yearly rainfall: " + weatherTowns[i].averageRainfall + " in";
-
+      
       blurb.appendChild(h3);
       blurb.appendChild(mottoP);
       blurb.appendChild(image);
       blurb.appendChild(yearP);
       blurb.appendChild(populationP);
-      blurb.appendChild(rainP);
+     
 
       document.querySelector(".town").appendChild(blurb);
     }
