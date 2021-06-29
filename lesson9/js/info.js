@@ -5,24 +5,40 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject); // temporary checking for valid response and data parsing
     const towns = jsonObject["towns"];
-    for (let i = 0; i < towns.length; i++) {
-      let card = document.createElement("section");
-      let h2 = document.createElement("h2");
-      let date = document.createElement("p");
-      let motto = document.createElement("p");
+    const weatherTowns = towns.filter(
+      (town) =>
+        town.name == "Soda Springs" ||
+        town.name == "Fish Haven" ||
+        town.name == "Preston"
+    );
+
+    for (let i = 0; i < weatherTowns.length; i++) {
+      let blurb = document.createElement("div");
+      let h3 = document.createElement("h3");
+      let mottoP = document.createElement("p");
       let image = document.createElement("img");
+      let yearP = document.createElement("p");
+      let populationP = document.createElement("p");
+      let rainP = document.createElement("p");
 
-      h2.textContent = towns[i].name + " ";
-      motto.textContent = "Motto: " + towns[i].motto;
-      image.src = towns[i].photo;
-      image.alt = towns[i].name + " ";
+      h3.textContent = weatherTowns[i].name;
+      mottoP.textContent = weatherTowns[i].motto;
+      image.setAttribute("src", weatherTowns[i].photo);
+      image.setAttribute("alt", "A photo of " + weatherTowns[i].name);
+      yearP.textContent = "Founded in " + weatherTowns[i].yearFounded;
+      populationP.textContent =
+        "Population: " + weatherTowns[i].currentPopulation;
+      rainP.textContent =
+        "Yearly rainfall: " + weatherTowns[i].averageRainfall + " in";
 
-      card.appendChild(h2);
-      card.appendChild(date);
-      card.appendChild(motto);
-      card.appendChild(image);
-      document.querySelector("div.cards").appendChild(card);
+      blurb.appendChild(h3);
+      blurb.appendChild(mottoP);
+      blurb.appendChild(image);
+      blurb.appendChild(yearP);
+      blurb.appendChild(populationP);
+      blurb.appendChild(rainP);
+
+      document.querySelector(".town").appendChild(blurb);
     }
   });
