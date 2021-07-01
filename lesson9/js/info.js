@@ -17,22 +17,22 @@ fetch(requestURL)
       let blurb = document.createElement("div");
       let h3 = document.createElement("h3");
       let mottoP = document.createElement("p");
-      let image = document.createElement("img");
+      let images = document.createElement("img");
       let yearP = document.createElement("p");
       let populationP = document.createElement("p");
 
 
       h3.textContent = weatherTowns[i].name;
       mottoP.textContent = weatherTowns[i].motto;
-      image.setAttribute("src", weatherTowns[i].photo);
-      image.setAttribute("alt", "A photo of " + weatherTowns[i].name);
+      images.setAttribute("src", weatherTowns[i].photo);
+      images.setAttribute("alt", "A photo of " + weatherTowns[i].name);
       yearP.textContent = "Founded in " + weatherTowns[i].yearFounded;
       populationP.textContent =
         "Population: " + weatherTowns[i].currentPopulation;
       
       blurb.appendChild(h3);
       blurb.appendChild(mottoP);
-      blurb.appendChild(image);
+      blurb.appendChild(images);
       blurb.appendChild(yearP);
       blurb.appendChild(populationP);
      
