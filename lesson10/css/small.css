@@ -1,5 +1,5 @@
 body {
-  background-color: grey;
+  background-color: teal;
   color: purple;
   padding: 0;
   margin: 0;
@@ -43,7 +43,7 @@ article {
   padding: 0 1rem;
   background-color: #eee;
   height: auto;
-  clear: both ;
+  clear: both;
 }
 
 .article img {
@@ -121,8 +121,8 @@ nav {
 }
 
 /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
-    <ul class="navigation responsive">
-  */
+      <ul class="navigation responsive">
+    */
 .responsive li {
   display: block;
 }
@@ -153,14 +153,16 @@ p {
   opacity: 0.9;
 }
 
-table,th,td {
-	border: 1px solid #333;
-	border-collapse: collapse;
-	padding: 5px;
+table,
+th,
+td {
+  border: 1px solid #333;
+  border-collapse: collapse;
+  padding: 5px;
 }
 
 td {
-	background-color: #bad;
-	font-size: 0.8rem;
-	text-align: center;
+  background-color: #bad;
+  font-size: 0.8rem;
+  text-align: center;
 }
