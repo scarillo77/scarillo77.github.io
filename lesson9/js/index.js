@@ -27,6 +27,3 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 
 datefield.textContent = fulldate;
 
-if (date.getDay() == 5) {
-  document.querySelector("#banner").style.display = "block";
-}
