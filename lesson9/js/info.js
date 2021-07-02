@@ -14,29 +14,31 @@ fetch(requestURL)
     );
 
     for (let i = 0; i < weatherTowns.length; i++) {
-      let blurb = document.createElement("div");
+      let card = document.createElement("div");
       let h3 = document.createElement("h3");
-      let mottoP = document.createElement("p");
+      let motto = document.createElement("p");
       let images = document.createElement("img");
-      let yearP = document.createElement("p");
-      let populationP = document.createElement("p");
+      let year = document.createElement("p");
+      let population = document.createElement("p");
 
 
       h3.textContent = weatherTowns[i].name;
-      mottoP.textContent = weatherTowns[i].motto;
-      images.setAttribute("src", weatherTowns[i].photo);
+      motto.textContent = weatherTowns[i].motto;
+      images.setAttribute("src", weatherTowns.photo);
       images.setAttribute("alt", "A photo of " + weatherTowns[i].name);
-      yearP.textContent = "Founded in " + weatherTowns[i].yearFounded;
-      populationP.textContent =
+      year.textContent = "Founded in " + weatherTowns[i].yearFounded;
+      population.textContent =
         "Population: " + weatherTowns[i].currentPopulation;
       
-      blurb.appendChild(h3);
-      blurb.appendChild(mottoP);
-      blurb.appendChild(images);
-      blurb.appendChild(yearP);
-      blurb.appendChild(populationP);
+      
+      card.appendChild(h3);
+      card.appendChild(motto);
+      card.appendChild(images);
+      card.appendChild(year);
+      card.appendChild(population);
      
+      
 
-      document.querySelector(".town").appendChild(blurb);
+      document.querySelector(".town").appendChild(card);
     }
   });
