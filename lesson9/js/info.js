@@ -24,7 +24,7 @@ fetch(requestURL)
 
       h3.textContent = weatherTowns[i].name;
       motto.textContent = weatherTowns[i].motto;
-      images.setAttribute("src", weatherTowns.photo);
+      images.setAttribute("src", weatherTowns[i].photo);
       images.setAttribute("alt", "A photo of " + weatherTowns[i].name);
       year.textContent = "Founded in " + weatherTowns[i].yearFounded;
       population.textContent =
