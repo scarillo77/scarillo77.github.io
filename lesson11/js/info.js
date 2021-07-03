@@ -37,9 +37,9 @@ fetch(requestURL)
     const towns = jsonObject["towns"];
     const weatherTowns = towns.filter(
       (town) =>
+        town.name == "Preston" ||
         town.name == "Soda Springs" ||
-        town.name == "Fish Haven" ||
-        town.name == "Preston"
+        town.name == "Fish Haven"
     );
 
     for (let i = 0; i < weatherTowns.length; i++) {
@@ -50,7 +50,6 @@ fetch(requestURL)
       let year = document.createElement("p");
       let population = document.createElement("p");
 
-
       h3.textContent = weatherTowns[i].name;
       motto.textContent = weatherTowns[i].motto;
       images.setAttribute("src", weatherTowns[i].photo);
@@ -58,15 +57,12 @@ fetch(requestURL)
       year.textContent = "Founded in " + weatherTowns[i].yearFounded;
       population.textContent =
         "Population: " + weatherTowns[i].currentPopulation;
-      
-      
+
       card.appendChild(h3);
       card.appendChild(motto);
       card.appendChild(images);
       card.appendChild(year);
       card.appendChild(population);
-     
-      
 
       document.querySelector(".town").appendChild(card);
     }
