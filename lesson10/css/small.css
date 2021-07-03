@@ -33,8 +33,11 @@ header img {
   height: auto;
 }
 
-aside {
+.banner {
   display: none;
+  margin: 0 auto;
+  max-width: 960px;
+  background-color: red;
 }
 
 article {
