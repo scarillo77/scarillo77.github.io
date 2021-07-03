@@ -50,13 +50,13 @@ fetch(requestURL)
       let year = document.createElement("p");
       let population = document.createElement("p");
 
-      h3.textContent = weatherTowns[i].name;
+      h2.textContent = weatherTowns[i].name;
       motto.textContent = weatherTowns[i].motto;
-      images.setAttribute("src", weatherTowns[i].photo);
-      images.setAttribute("alt", "A photo of " + weatherTowns[i].name);
       year.textContent = "Year Founded:" + weatherTowns[i].yearFounded;
       population.textContent =
         "Population: " + weatherTowns[i].currentPopulation;
+      images.setAttribute("src", weatherTowns[i].photo);
+      images.setAttribute("alt", "A photo of " + weatherTowns[i].name);
 
       card.appendChild(h2);
       card.appendChild(motto);
