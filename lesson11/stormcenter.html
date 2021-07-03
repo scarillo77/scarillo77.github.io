@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Idaho Weather-Storm Center</title>
+    <meta
+      name="description"
+      content="This page allows user to input weather data to get their answers"
+    />
+    <link rel="icon" href="images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+    />
+    <link rel="stylesheet" href="css/stormcenter.css" />
+    <script defer src="js/index.js"></script>
+  </head>
+  <body>
+    <header>
+      <picture>
+        <img src="images/weather.png" alt="Idaho Weather Logo" />
+      </picture>
+      <section class="headings">
+        <h1>Idaho Weather</h1>
+        <div class="m">Idaho's 24/7 Weather Site</div>
+      </section>
+    </header>
+    <nav>
+      <ul class="navigation responsive">
+        <li><a class="ham" href="#">Menu</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <form action="thanks.html" method="get">
+        <fieldset>
+          <label
+            >Full Name*<input
+              type="text"
+              name="name"
+              pattern="^[a-zA-Z]{5,}"
+              required=""
+          /></label>
+
+          <label
+            >Email<input type="email" name="email" placeholder="@gmail.com"
+          /></label>
+
+          <label
+            >Phone Number*<input type="tel" name="phone" required=""
+          /></label>
+
+          <label
+            >Zip Code*<input type="number" name="zip" id="zip" required=""
+          /></label>
+        </fieldset>
+        <fieldset>
+          <label for="start">Storm date:</label>
+          <input
+            type="date"
+            id="storm"
+            name="trip-start"
+            min="1998-01-01"
+            max="2021-12-31"
+          />
+
+          <label for="storm-type-choice">Storm type:</label>
+          <input
+            list="storm-type"
+            id="storm-type-choice"
+            name="storm-type-choice"
+          />
+
+          <datalist id="storm-type">
+            <option value="Flash Flood"></option>
+            <option value="Hail"></option>
+            <option value="Hurricane"></option>
+            <option value="Thunderstorm"></option>
+            <option value="Tornado"></option>
+          </datalist>
+
+          <label class="flexly" for="rating"
+            >Storm Severity: &nbsp;&nbsp;&nbsp;
+            <input
+              type="range"
+              id="rating"
+              value="5"
+              min="1"
+              max="10"
+              step="1"
+              list="tickmarks"
+              oninput="adjustRating(this.value)"
+              onchange="adjustRating(this.value)"
+            />
+            <span id="ratingvalue">5</span>
+          </label>
+
+          <datalist id="tickmarks">
+            <option value="0"></option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="9"></option>
+            <option value="10"></option>
+          </datalist>
+
+          <label>
+            <select
+              name="browsers"
+              id="selectbrowser"
+              onchange="selectResponse()"
+            >
+              <option value="" disabled selected>Select Region ...</option>
+              <option value="Preston">Preston</option>
+              <option value="Soda Springs">Soda Springs</option>
+              <option value="Fish Haven">Fish Haven</option>
+            </select></label
+          >
+          <p>Are you in danger?</p>
+
+          <div>
+            <input type="radio" id="yes" name="danger" value="yes" checked />
+            <label for="yes">Yes</label>
+          </div>
+
+          <div>
+            <input type="radio" id="maybe" name="danger" value="maybe" />
+            <label for="maybe">Maybe</label>
+          </div>
+
+          <div>
+            <input type="radio" id="no" name="danger" value="no" />
+            <label for="no">No</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <label
+            >Further Storm Details
+            <br />
+            <textarea id="comments" name="comments"></textarea>
+          </label>
+        </fieldset>
+        <div class="submission">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </main>
+    <footer>
+      &copy; <span id="theyear"></span> | Spencer Carillo | Idaho |
+      <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+      <p id="date"></p>
+    </footer>
+  </body>
+</html>

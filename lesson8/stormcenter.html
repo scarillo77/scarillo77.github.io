@@ -72,96 +72,96 @@
           /></label>
         </fieldset>
         <fieldset>
-        <label for="start">Storm date:</label>
-        <input
-          type="date"
-          id="storm"
-          name="trip-start"
-          min="1998-01-01"
-          max="2021-12-31"
-        />
-
-        <label for="storm-type-choice">Storm type:</label>
-        <input
-          list="storm-type"
-          id="storm-type-choice"
-          name="storm-type-choice"
-        />
-
-        <datalist id="storm-type">
-          <option value="Flash Flood"></option>
-          <option value="Hail"></option>
-          <option value="Hurricane"></option>
-          <option value="Thunderstorm"></option>
-          <option value="Tornado"></option>
-        </datalist>
-
-        <label class="flexly" for="rating"
-          >Storm Severity: &nbsp;&nbsp;&nbsp;
+          <label for="start">Storm date:</label>
           <input
-            type="range"
-            id="rating"
-            value="5"
-            min="1"
-            max="10"
-            step="1"
-            list="tickmarks"
-            oninput="adjustRating(this.value)"
-            onchange="adjustRating(this.value)"
+            type="date"
+            id="storm"
+            name="trip-start"
+            min="1998-01-01"
+            max="2021-12-31"
           />
-          <span id="ratingvalue">5</span>
-        </label>
 
-        <datalist id="tickmarks">
-          <option value="0"></option>
-          <option value="1"></option>
-          <option value="2"></option>
-          <option value="3"></option>
-          <option value="4"></option>
-          <option value="5"></option>
-          <option value="6"></option>
-          <option value="7"></option>
-          <option value="8"></option>
-          <option value="9"></option>
-          <option value="10"></option>
-        </datalist>
+          <label for="storm-type-choice">Storm type:</label>
+          <input
+            list="storm-type"
+            id="storm-type-choice"
+            name="storm-type-choice"
+          />
 
-        <label>
-          <select
-            name="browsers"
-            id="selectbrowser"
-            onchange="selectResponse()"
+          <datalist id="storm-type">
+            <option value="Flash Flood"></option>
+            <option value="Hail"></option>
+            <option value="Hurricane"></option>
+            <option value="Thunderstorm"></option>
+            <option value="Tornado"></option>
+          </datalist>
+
+          <label class="flexly" for="rating"
+            >Storm Severity: &nbsp;&nbsp;&nbsp;
+            <input
+              type="range"
+              id="rating"
+              value="5"
+              min="1"
+              max="10"
+              step="1"
+              list="tickmarks"
+              oninput="adjustRating(this.value)"
+              onchange="adjustRating(this.value)"
+            />
+            <span id="ratingvalue">5</span>
+          </label>
+
+          <datalist id="tickmarks">
+            <option value="0"></option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="9"></option>
+            <option value="10"></option>
+          </datalist>
+
+          <label>
+            <select
+              name="browsers"
+              id="selectbrowser"
+              onchange="selectResponse()"
+            >
+              <option value="" disabled selected>Select Region ...</option>
+              <option value="Preston">Preston</option>
+              <option value="Soda Springs">Soda Springs</option>
+              <option value="Fish Haven">Fish Haven</option>
+            </select></label
           >
-            <option value="" disabled selected>Select Region ...</option>
-            <option value="Preston">Preston</option>
-            <option value="Soda Springs">Soda Springs</option>
-            <option value="Fish Haven">Fish Haven</option>
-          </select></label
-        >
-      </fieldset>
-      <fieldset>
-        <p>Are you in danger?</p>
+          <p>Are you in danger?</p>
 
-        <div>
-          <input type="radio" id="yes" name="danger" value="yes" checked />
-          <label for="yes">Yes</label>
-        </div>
+          <div>
+            <input type="radio" id="yes" name="danger" value="yes" checked />
+            <label for="yes">Yes</label>
+          </div>
 
-        <div>
-          <input type="radio" id="maybe" name="danger" value="maybe" />
-          <label for="maybe">Maybe</label>
-        </div>
+          <div>
+            <input type="radio" id="maybe" name="danger" value="maybe" />
+            <label for="maybe">Maybe</label>
+          </div>
 
-        <div>
-          <input type="radio" id="no" name="danger" value="no" />
-          <label for="no">No</label>
-        </div>
-
-        <label>Further Storm Details
-          <br>
-          <textarea id="comments" name="comments"></textarea>
-      </label>
-      </fieldset>
+          <div>
+            <input type="radio" id="no" name="danger" value="no" />
+            <label for="no">No</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <label
+            >Further Storm Details
+            <br />
+            <textarea id="comments" name="comments"></textarea>
+          </label>
+        </fieldset>
         <div class="submission">
           <input type="submit" value="Submit" />
         </div>

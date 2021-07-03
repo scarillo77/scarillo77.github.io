@@ -1,0 +1,228 @@
+body {
+  background-color: grey;
+  color: purple;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+label {
+  display: block;
+  font: 1rem "Open Sans", sans-serif;
+}
+
+input,
+label {
+  margin: 0.4rem 0;
+}
+
+.flexly {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header,
+main,
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header,
+footer {
+  background-color: orange;
+  padding: 1rem;
+  border: 1px solid red;
+}
+
+header img {
+  width: 80px;
+  height: auto;
+}
+
+aside {
+  display: none;
+}
+
+article {
+  margin: 0.5rem;
+  border: 1px solid #bbb;
+  padding: 0 1rem;
+  background-color: #eee;
+  height: auto;
+}
+
+.article img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  border: 1px solid #bbb;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+}
+
+.headings h1 {
+  font-size: 1.6rem;
+  margin: 0 0 0 17px;
+  font-family: "Times New Roman", Times, serif;
+  color: blue;
+}
+
+h2 {
+  color: darkblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.m {
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 1pt;
+  color: darkblue;
+  margin-left: 20px;
+  font-size: 1rem;
+}
+
+footer {
+  height: auto;
+  color: black;
+}
+
+header,
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Small/Phone View ***************/
+nav {
+  margin: 0 auto;
+  max-width: 960px;
+  background-color: red;
+}
+.navigation {
+  list-style: none;
+  padding: 0;
+}
+.navigation li:first-child {
+  display: block;
+}
+.navigation li {
+  display: none;
+}
+.navigation a {
+  display: block;
+  padding: 0.75rem;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.navigation a:hover {
+  color: white;
+  background-color: black;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+      <ul class="navigation responsive">
+    */
+.responsive li {
+  display: block;
+}
+
+.weatherdetails {
+  margin: 10px auto;
+  position: relative;
+}
+
+.weatherdetails img {
+  width: 100%;
+}
+
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.weathersummary {
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  background: radial-gradient(#eee, #4567aa);
+  border: 1px solid #000;
+  padding: 1.5rem;
+  box-shadow: 0 0 30px #333;
+  opacity: 0.9;
+  display: grid;
+}
+
+table,
+th,
+td {
+  border: 1px solid #333;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+td {
+  background-color: lightblue;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.submission {
+  display: table-row;
+}
+/* Media Query for medium+ views */
+@media only screen and (min-width: 32em) {
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    display: block; /* change state in small view */
+    flex: auto;
+  }
+  .navigation a {
+    text-align: center;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+
+  .article img {
+    width: 100px;
+    height: auto;
+    float: right;
+  }
+
+  footer {
+    clear: both;
+  }
+}
+/* Larger viewports */
+@media only screen and (min-width: 80em) {
+  header img {
+    width: 90px;
+  }
+
+  .headings h1 {
+    font-size: 3rem;
+  }
+
+  .m {
+    letter-spacing: 1.5pt;
+    font-size: larger;
+    margin-left: 17px;
+  }
+}
