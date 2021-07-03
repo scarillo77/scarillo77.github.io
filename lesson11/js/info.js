@@ -44,7 +44,7 @@ fetch(requestURL)
 
     for (let i = 0; i < weatherTowns.length; i++) {
       let card = document.createElement("div");
-      let h3 = document.createElement("h3");
+      let h2 = document.createElement("h2");
       let motto = document.createElement("p");
       let images = document.createElement("img");
       let year = document.createElement("p");
@@ -58,7 +58,7 @@ fetch(requestURL)
       population.textContent =
         "Population: " + weatherTowns[i].currentPopulation;
 
-      card.appendChild(h3);
+      card.appendChild(h2);
       card.appendChild(motto);
       card.appendChild(year);
       card.appendChild(population);
