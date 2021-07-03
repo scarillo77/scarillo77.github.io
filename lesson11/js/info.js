@@ -54,15 +54,15 @@ fetch(requestURL)
       motto.textContent = weatherTowns[i].motto;
       images.setAttribute("src", weatherTowns[i].photo);
       images.setAttribute("alt", "A photo of " + weatherTowns[i].name);
-      year.textContent = "Founded in " + weatherTowns[i].yearFounded;
+      year.textContent = "Year Founded:" + weatherTowns[i].yearFounded;
       population.textContent =
         "Population: " + weatherTowns[i].currentPopulation;
 
       card.appendChild(h3);
       card.appendChild(motto);
-      card.appendChild(images);
       card.appendChild(year);
       card.appendChild(population);
+      card.appendChild(images);
 
       document.querySelector(".town").appendChild(card);
     }
