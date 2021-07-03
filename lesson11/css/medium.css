@@ -1,0 +1,36 @@
+/* Media Query for medium+ views */
+@media only screen and (min-width: 32em) {
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    display: block; /* change state in small view */
+    flex: auto;
+  }
+  .navigation a {
+    text-align: center;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+
+  .article img {
+    width: 100px;
+    height: auto;
+    float: right;
+  }
+
+  footer {
+    clear: both;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 0.8rem;
+  }
+
+  .article-title {
+    clear: left;
+  }
+}
