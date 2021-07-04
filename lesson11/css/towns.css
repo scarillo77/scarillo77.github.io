@@ -239,7 +239,7 @@ td {
 }
 .forecast tr td {
   text-align: center;
-  background-color: lightslategrey;
+  background-color: lightgreen;
   padding: 2px;
 }
 .forecast tr th {
