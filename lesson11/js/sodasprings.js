@@ -59,3 +59,18 @@ if ("IntersectionObserver" in window) {
     loadImages(img);
   });
 }
+  
+  const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+  fetch(requestURL)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (jsonObject) {
+      const towns = jsonObject["towns"];
+      const sodaSpringsInfo = towns.filter((town) => town.name == "Soda Springs" );
+      for (let i = 0; i < sodaSpringsInfo[0].events.length; i++) {
+        let event = document.createElement("p");
+        event.textContent = sodaSpringsInfo[0].events[i];
+        document.querySelector(".events").appendChild(event);
+      }
+    });
