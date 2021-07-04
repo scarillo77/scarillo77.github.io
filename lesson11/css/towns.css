@@ -1,226 +1,261 @@
 body {
-    background-color: grey;
-    color: darkblue;
-    padding: 0;
-    margin: 0;
-    font-size: 16px;
-  }
-  
-  header {
-    padding: 5px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  header,
-  main,
-  footer {
-    max-width: 960px;
-    margin: 0 auto;
-  }
-  
-  p {
-    font-family: "Courier New";
-    color: black;
-  }
+  background-color: grey;
+  color: darkblue;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
 
-  header,
-  footer {
-    background-color: orange;
-    padding: 1rem;
-    border: 1px solid red;
-  }
-  
-  header img {
-    width: 80px;
-    height: auto;
-  }
-  
-  .banner {
-    display: none;
-    margin: 0 auto;
-    max-width: 960px;
-    background-color: red;
-  }
-  
-  article {
-    margin: 0.5rem;
-    border: 1px solid #bbb;
-    padding: 0 1rem;
-    background-color: #eee;
-    height: auto;
-    clear: both;
-  }
-  
-  .article img {
-    display: block;
-    margin: auto;
-    width: 100%;
-    height: auto;
-    border: 1px solid #bbb;
-  }
-  
-  .headings {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .headings h1 {
-    font-size: 1.6rem;
-    margin: 0 0 0 17px;
-    font-family: "Times New Roman", Times, serif;
-    color: blue;
-  }
-  
-  h2 {
-    color: darkblue;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .m {
-    font-family: "Times New Roman", Times, serif;
-    letter-spacing: 1pt;
-    color: darkblue;
-    margin-left: 20px;
-    font-size: 1rem;
-  }
-  
-  footer {
-    height: auto;
-    color: black;
-  }
-  
-  header,
-  main,
-  footer {
-    max-width: 960px;
-    margin: 0 auto;
-  }
-  
-  /* Small/Phone View ***************/
-  nav {
-    margin: 0 auto;
-    max-width: 960px;
-    background-color: red;
-  }
-  .navigation {
-    list-style: none;
-    padding: 0;
-  }
-  .navigation li:first-child {
-    display: block;
-  }
-  .navigation li {
-    display: none;
-  }
-  .navigation a {
-    display: block;
-    padding: 0.75rem;
-    text-align: left;
-    text-decoration: none;
-    color: black;
-    font-weight: 700;
-  }
-  .navigation a:hover {
-    color: white;
-    background-color: black;
-  }
-  
-  /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+header {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header,
+main,
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+p {
+  font-family: "Courier New";
+  color: black;
+}
+
+header,
+footer {
+  background-color: orange;
+  padding: 1rem;
+  border: 1px solid red;
+}
+
+header img {
+  width: 80px;
+  height: auto;
+}
+
+.banner {
+  display: none;
+  margin: 0 auto;
+  max-width: 960px;
+  background-color: red;
+}
+
+article {
+  margin: 0.5rem;
+  border: 1px solid #bbb;
+  padding: 0 1rem;
+  background-color: #eee;
+  height: auto;
+  clear: both;
+}
+
+.article img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  border: 1px solid #bbb;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+}
+
+.headings h1 {
+  font-size: 1.6rem;
+  margin: 0 0 0 17px;
+  font-family: "Times New Roman", Times, serif;
+  color: blue;
+}
+
+h2 {
+  color: darkblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.m {
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 1pt;
+  color: darkblue;
+  margin-left: 20px;
+  font-size: 1rem;
+}
+
+footer {
+  height: auto;
+  color: black;
+}
+
+header,
+main,
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Small/Phone View ***************/
+nav {
+  margin: 0 auto;
+  max-width: 960px;
+  background-color: red;
+}
+.navigation {
+  list-style: none;
+  padding: 0;
+}
+.navigation li:first-child {
+  display: block;
+}
+.navigation li {
+  display: none;
+}
+.navigation a {
+  display: block;
+  padding: 0.75rem;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.navigation a:hover {
+  color: white;
+  background-color: black;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
         <ul class="navigation responsive">
       */
-  .responsive li {
-    display: block;
-  }
-  
-  main {
-    max-width: 820px;
-    margin: 0 auto;
-  }
-  
-  .weatherdetails {
-    position: absolute;
-    top: 25px;
-    right: 50px;
-    background: radial-gradient(#eee, purple);
-    border: 1px solid #000;
-    padding: 1.5rem;
-    box-shadow: 0 0 30px #333;
-    opacity: 0.9;
-    display: grid;
-  }
-  h2,
-  h3,
-  p {
-    margin: 0;
-  }
-  
- .hero {
+.responsive li {
+  display: block;
+}
+
+main {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.weatherdetails {
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  background: radial-gradient(#eee, purple);
+  border: 1px solid #000;
+  padding: 1.5rem;
+  box-shadow: 0 0 30px #333;
+  opacity: 0.9;
+  display: grid;
+}
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.hero {
   position: relative;
- }
-  
-  table,
-  th,
-  td {
-    border: 1px solid #333;
-    border-collapse: collapse;
-    padding: 5px;
-  }
-  
-  td {
-    background-color: #bad;
-    font-size: 0.8rem;
-    text-align: center;
-  }
+}
+
+table,
+th,
+td {
+  border: 1px solid #333;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+td {
+  background-color: #bad;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+
 /* Media Query for medium+ views */
 @media only screen and (min-width: 32em) {
-    .navigation {
-      display: flex;
-    }
-    .navigation li {
-      display: block; /* change state in small view */
-      flex: auto;
-    }
-    .navigation a {
-      text-align: center;
-    }
-    .navigation li:first-child {
-      display: none;
-    }
-
+  .navigation {
+    display: flex;
   }
-  /* Larger viewports */
-@media only screen and (min-width: 80em) {
-    header img {
-      width: 90px;
-    }
-  
-    .headings h1 {
-      font-size: 3rem;
-    }
-  
-    .m {
-      letter-spacing: 1.5pt;
-      font-size: larger;
-      margin-left: 17px;
-    }
-  
-    .article {
-      clear: both;
-    }
-  
-    .article img {
-      width: 300px;
-      height: auto;
-      float: right;
-    }
-  }  
-
-  .events {
-    background: radial-gradient(#eee, purple);
-    border: 5px solid #15709F;
-    box-shadow: 0.3rem 0.3rem 0.5rem 0.2rem rgb(0 0 0 / 40%);
-    max-width: 30rem;
+  .navigation li {
+    display: block; /* change state in small view */
+    flex: auto;
+  }
+  .navigation a {
     text-align: center;
-    margin: 0 auto 2rem auto; }
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+}
+/* Larger viewports */
+@media only screen and (min-width: 80em) {
+  header img {
+    width: 90px;
+  }
+
+  .headings h1 {
+    font-size: 3rem;
+  }
+
+  .m {
+    letter-spacing: 1.5pt;
+    font-size: larger;
+    margin-left: 17px;
+  }
+
+  .article {
+    clear: both;
+  }
+
+  .article img {
+    width: 300px;
+    height: auto;
+    float: right;
+  }
+}
+
+.events {
+  background: radial-gradient(#eee, purple);
+  border: 5px solid #15709f;
+  box-shadow: 0.3rem 0.3rem 0.5rem 0.2rem rgb(0 0 0 / 40%);
+  max-width: 30rem;
+  text-align: center;
+  margin: 0 auto 2rem auto;
+}
+
+
+
+.forecast {
+  margin: 0 auto;
+  box-shadow: 0.3rem 0.3rem 0.5rem 0.2rem rgba(0, 0, 0, 0.4);
+}
+.forecast-days {
+  background-color: purple;
+  color: #dfedf2;
+}
+.forecast tr td {
+  text-align: center;
+  background-color: lightslategrey;
+  padding: 2px;
+}
+.forecast tr th {
+  padding: 4px;
+}
+.forecast,
+.forecast tr td {
+  border: 2px solid #15709f;
+  border-collapse: collapse;
+}
+.forecast,
+.forecast-days {
+  border-color: #033e63;
+}
+
+.forecast tr td img {
+  width: auto;
+  padding: 0.5rem 1.3rem 0.1rem 1.3rem;
+}

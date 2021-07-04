@@ -26,3 +26,34 @@ if (windSpeed > 3 && tempF <= 50) {
 } else {
   document.querySelector("#chill").textContent = "n/a";
 }
+
+const forecastURL =
+  "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=99adfa7e0c76ea8d2eb5fdc33937bd76";
+fetch(forecastURL)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    const filteredForecast = jsObject.list.filter((forecast) =>
+      forecast.dt_txt.includes("18:00:00")
+    );
+    const imagesrc = "https://openweathermap.org/img/w/";
+    for (let i = 0; i < 5; i++) {
+      document
+        .querySelector("#icon" + (i + 1))
+        .setAttribute(
+          "src",
+          imagesrc + filteredForecast[i].weather[0].icon + ".png"
+        );
+      document
+        .querySelector("#icon" + (i + 1))
+        .setAttribute("alt", filteredForecast[i].weather[0].description);
+      document.querySelector("#temp" + (i + 1)).textContent =
+        filteredForecast[i].main.temp.toFixed(1);
+    }
+  });
+
+let now = new Date();
+var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+for (let i = 0; i < 5; i++) {
+  document.querySelector("#day" + (i + 1)).innerHTML =
+    days[(now.getDay() + i) % 7];
+}

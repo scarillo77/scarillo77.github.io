@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Idaho Weather-Preston</title>
+    <title>Idaho Weather-Soda Springs</title>
     <meta
       name="description"
-      content="This is the Preston page for my website, Idaho Weather"
+      content="This is the Soda Springs page for my website, Idaho Weather"
     />
     <link rel="icon" href="images/favicon.ico" />
     <link
@@ -61,41 +61,32 @@
           <p class="column2" id="wind"></p>
         </div>
       </section>
-      <table>
-        <thead>
-          <tr>
-            <th>Saturday</th>
-            <th>Sunday</th>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
+      <section class="forecast-section">
+        <h3>Five Day Forecast</h3>
+        <table class="forecast">
+          <tr id="forecast-days" class="forecast-days">
+            <th id="day1"></th>
+            <th id="day2"></th>
+            <th id="day3"></th>
+            <th id="day4"></th>
+            <th id="day5"></th>
           </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <img src="images/cloudy.jpg" alt="weather" /><br />
-              89 °F
-            </td>
-            <td>
-              <img src="images/cloudy.jpg" alt="weather" /><br />
-              88 °F
-            </td>
-            <td>
-              <img src="images/cloudy.jpg" alt="weather" /><br />
-              89 °F
-            </td>
-            <td>
-              <img src="images/cloudy.jpg" alt="weather" /><br />
-              89 °F
-            </td>
-            <td>
-              <img src="images/cloudy.jpg" alt="weather" /><br />
-              88 °F
-            </td>
+          <tr class="forecast-img">
+            <td><img src="" alt="" id="icon1" /></td>
+            <td><img src="" alt="" id="icon2" /></td>
+            <td><img src="" alt="" id="icon3" /></td>
+            <td><img src="" alt="" id="icon4" /></td>
+            <td><img src="" alt="" id="icon5" /></td>
           </tr>
-        </tbody>
-      </table>
+          <tr class="forecast-temp">
+            <td><span id="temp1"></span>&#176;F</td>
+            <td><span id="temp2"></span>&#176;F</td>
+            <td><span id="temp3"></span>&#176;F</td>
+            <td><span id="temp4"></span>&#176;F</td>
+            <td><span id="temp5"></span>&#176;F</td>
+          </tr>
+        </table>
+      </section>
       <div class="article">
         <article>
           <h3>Article</h3>
