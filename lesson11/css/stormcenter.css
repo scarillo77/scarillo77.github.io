@@ -1,10 +1,13 @@
 body {
   background-color: grey;
-  color: darkblue;
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
   font-size: 16px;
+}
+
+p {
+  font-family: "Courier New";
+  color: black;
 }
 
 label {
