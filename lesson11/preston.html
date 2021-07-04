@@ -43,17 +43,24 @@
     </nav>
     <main>
       <h2>Preston Idaho</h2>
-      <div class="weatherdetails">
-        <img src="images/idaho.png" alt="idaho" />
-        <section class="weathersummary">
+      <section class="hero">
+        <picture>
+          <img src="images/idaho.png" alt="weather" />
+        </picture>
+        <div class="weatherdetails">
           <h3>Weather Summary</h3>
-          <p>Currently: Sunny</p>
-          <p>High: 76</p>
-          <p>Wind Chill: 55</p>
-          <p>Humidity: 69</p>
-          <p>Wind Speed: 5 mph</p>
-        </section>
-      </div>
+          <p class="column1">Currently:</p>
+          <p class="column2" id="curr-weather"></p>
+          <p class="column1">Temperature:</p>
+          <p class="column2"><span id="temp"></span>&#176;F</p>
+          <p class="column1">Wind chill:</p>
+          <p class="column2"><span id="chill"></span></p>
+          <p class="column1">Humidity:</p>
+          <p class="column2" id="humidity"></p>
+          <p class="column1">Wind speed:</p>
+          <p class="column2" id="wind"></p>
+        </div>
+      </section>
       <table>
         <thead>
           <tr>
@@ -112,11 +119,14 @@
           </p>
         </article>
       </div>
+      <div class="events">
+      </div>
     </main>
     <footer>
       © <span id="theyear">2021</span> | Spencer Carillo | Idaho |
       <a href="https://www.byui.edu/online">BYUI Online Learning</a>
       <p id="date">Monday, June 28, 2021</p>
     </footer>
+    <script src="js/prestonapi.js"></script>
   </body>
 </html>
