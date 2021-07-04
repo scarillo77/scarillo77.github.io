@@ -56,6 +56,10 @@ article {
   border: 1px solid #bbb;
 }
 
+.hero {
+  position: relative;
+}
+
 .headings {
   display: flex;
   flex-direction: column;
