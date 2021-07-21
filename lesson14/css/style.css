@@ -23,7 +23,7 @@ footer {
 
 p {
   font-family: "Times New Roman", Times, serif;
-  color: black;
+  color: #101519;
 }
 
 
@@ -93,7 +93,7 @@ h2 {
 
 footer {
   height: auto;
-  color: black;
+  color: #101519;
 }
 
 header,
@@ -182,6 +182,18 @@ nav {
 .responsive li {
   display: block;
 }
+
+/*Spanish Fork Page*/
+ img {
+  width: 100%;
+}
+
+article {
+  background-color: #101519 ;
+  font-family: "Times New Roman", Times, serif;
+  color: #efb806;
+}
+
 /*Join Page*/
 table,
 th,

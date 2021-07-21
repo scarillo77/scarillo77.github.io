@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title> Join The Chamber - Spanish Fork Chamber of Commerce</title>
-    <meta name="description" content="sign up page to join the Spanish Fork Chamber of Commerce" />
+    <title>Spanish Fork - Spanish Fork Chamber of Commerce</title>
+    <meta name="description" content="Spanish Fork Page" />
+    <link rel="icon" href="images/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -12,34 +13,77 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-      <header>
-        <picture>
-          <img src="images/chamber.png" alt="Chamber of Commerce logo" />
-        </picture>
-        <section class="headings">
-          <h1>Spanish Fork Chamber of Commerce</h1>
-          <div class="m">Pride & Progress</div>
-        </section>
-      </header>
-      <nav>
-        <ul class="navigation">
-          <li><a class="ham" href="#">Menu</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="spanishfork.html">Spanish Fork</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="join.html">Join</a></li>
-          </ul>
-      </nav>
-      <main>
-      </main>
+    <header>
+      <picture>
+        <img src="images/chamber.png" alt="Chamber of Commerce logo" />
+      </picture>
+      <section class="headings">
+        <h1>Spanish Fork Chamber of Commerce</h1>
+        <div class="m">Pride & Progress</div>
+      </section>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a class="ham" href="#">Menu</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="spanishfork.html">Spanish Fork</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+    <main>
+      <picture>
+        <source
+          media="(min-width:320px) and (max-width:500px)"
+          srcset="images/Spanish-Fork-small.jpg"
+        />
+        <source
+          media="(min-width:500px) and (max-width:750px)"
+          srcset="images/Spanish-Fork-medium.jpg"
+        />
+        <source
+          media="(min-width:750px) and (max-width:1100px)"
+          srcset="images/Spanish-Fork-large.jpg"
+        />
+        <img src="images/Spanish-Fork-large.jpg" alt="Spanish Fork" />
+      </picture>
+      <article>
+        <h2>Demographics</h2>
+        <ul>
+          <li>Population (as of 2021): 42,895</li>
+          <li>White: 94.21%</li>
+          <li>Two or more races: 2.36%</li>
+          <li>Other race: 1.53%</li>
+          <li>Median resident age: 25.3</li>
+          <li>Male: 51%, Female: 49%</li>
+          <li>Average Earnings: $40,473</li>
+        </ul>
+      </article>
+      <article>
+        <h2>History</h2>
+        <ul>
+          <li>
+            Settled in 1851 by pioneers of the Church of Jesus Christ of
+            Latter-Day Saints
+          </li>
+          <li>
+            Name "Spanish Fork" was derived from the fact that the route of the
+            Taos trappers during the early part of the 1800's followed the
+            canyon and the river
+          </li>
+          <li>1862: First school built</li>
+          <li>1909: First lighty and power system built</li>
+          <li>1925: First annual Utah County livestock show held in City Square</li>
+        </ul>
+      </article>
+    </main>
     <footer>
-      <div class = "info">
-      &copy; <span id="theyear"></span> | Spencer Carillo | Idaho |
-      Last Modified: <span id="lastmod"></span>
-    </div>
+      <div class="info">
+        &copy; <span id="theyear"></span> | Spencer Carillo | Idaho | Last
+        Modified: <span id="lastmod"></span>
+      </div>
     </footer>
     <script src="js/index.js"></script>
   </body>
 </html>
-
