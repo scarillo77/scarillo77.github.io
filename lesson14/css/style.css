@@ -26,6 +26,11 @@ p {
   color: black;
 }
 
+
+footer a:visited {
+  color: white;
+}
+
 header,
 footer {
   background-color: #101519;
@@ -79,7 +84,7 @@ article {
 
 h2 {
   color: #088732;
-  font-family: "font-family: Arial, Helvetica, sans-serif";
+  font-family: "Times New Roman", Times, serif;;
 }
 
 .m {
@@ -87,7 +92,7 @@ h2 {
   letter-spacing: 1pt;
   color: #088732;
   margin-left: 20px;
-  font-size: 1rem;
+  font-size: 15rem;
 }
 
 footer {
