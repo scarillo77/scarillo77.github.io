@@ -35,7 +35,23 @@
         <li><a href="join.html">Join</a></li>
       </ul>
     </nav>
-    <main></main>
+    <main>
+      <picture>
+        <source
+          media="(min-width:320px) and (max-width:500px)"
+          srcset="images/SF-small"
+        />
+        <source
+          media="(min-width:500px) and (max-width:750px)"
+          srcset="images/SF-medium.jpg"
+        />
+        <source
+          media="(min-width:750px) and (max-width:1100px)"
+          srcset="images/SF-large.jpg"
+        />
+        <img src="images/SF-large.jpg" alt="Spanish Fork" />
+      </picture>
+    </main>
     <footer>
       <div class="info">
         &copy; <span id="theyear"></span> | Spencer Carillo | Idaho | Last
