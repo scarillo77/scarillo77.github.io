@@ -27,10 +27,6 @@ p {
 }
 
 
-footer a:visited {
-  color: white;
-}
-
 header,
 footer {
   background-color: #101519;
@@ -92,7 +88,7 @@ h2 {
   letter-spacing: 1pt;
   color: #088732;
   margin-left: 20px;
-  font-size: 15rem;
+  font-size: 6rem;
 }
 
 footer {
