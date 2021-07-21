@@ -4,43 +4,50 @@
       "name": "In-N-Out Burger",
       "address": "795 E 800 N, Spanish Fork, UT 84660",
       "phone": "(800) 786-1000",
-      "website url": "https://locations.in-n-out.com/358"
+      "siteurl": "https://locations.in-n-out.com/358",
+      "photo": "innout.jpg"
     },
     {
       "name": "Maceys",
       "address": "187 E 1000 N, Spanish Fork, UT 84660",
       "phone": "(801) 798-9803",
-      "website url": "https://www.maceys.com/"
+      "siteurl": "https://www.maceys.com/",
+      "photo": "maceys.jpg"
     },
     {
       "name": "Lowe's Home Improvement",
       "address": "1386 Canyon Creek Pkwy, Spanish Fork, UT 84660",
       "phone": "(801) 504-9670",
-      "website url": "https://www.lowes.com/"
+      "siteurl": "https://www.lowes.com/",
+      "photo": "lowes.jpg"
     },
     {
       "name": "Ross Dress for Less",
       "address": "1112 Canyon Creek Pkwy, Spanish Fork, UT 84660",
       "phone": "(801) 798-0280",
-      "website url":"https://www.rossstores.com/"
+      "siteurl": "https://www.rossstores.com/",
+      "photo": "ross.jpg"
     },
     {
       "name": "Ace Hardware",
       "address": "888 N 600 E, Spanish Fork, UT 84660",
       "phone": "(385) 200-5940",
-      "website url": "https://www.acehardware.com/"
+      "siteurl": "https://www.acehardware.com/",
+      "photo": "ace.jpg"
     },
     {
       "name": "Chick-fil-A",
       "address": "825 US-6, Spanish Fork, UT 84660",
       "phone": "(801) 798-8129",
-      "website url": "https://www.chick-fil-a.com/locations/ut/spanish-fork"
+      "siteurl": "https://www.chick-fil-a.com/locations/ut/spanish-fork",
+      "photo": "chickfila.jpg"
     },
     {
       "name": "Culver's",
       "address": "943 N 700 E, Spanish Fork, UT 84660",
       "phone": "(801) 504-6249",
-      "website url": "https://www.culvers.com/restaurants/spanish-fork-ut?utm_source=Google&utm_medium=Maps&utm_campaign=Google+Places"
+      "siteurl": "https://www.culvers.com/restaurants/spanish-fork-ut?utm_source=Google&utm_medium=Maps&utm_campaign=Google+Places",
+      "photo": "culvers.jpg"
     }
   ]
 }
