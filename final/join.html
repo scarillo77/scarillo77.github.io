@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title> Join The Chamber - Spanish Fork Chamber of Commerce</title>
-    <meta name="description" content="Sign up page to join the Spanish Fork Chamber of Commerce" />
-    <link rel="icon" href="images/favicon.ico"/>
+    <title>Join The Chamber - Spanish Fork Chamber of Commerce</title>
+    <meta
+      name="description"
+      content="Sign up page to join the Spanish Fork Chamber of Commerce"
+    />
+    <link rel="icon" href="images/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -13,76 +16,82 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-      <header>
-        <picture>
-          <img src="images/chamber.png" alt="Chamber of Commerce logo" />
-        </picture>
-        <section class="headings">
-          <h1>Spanish Fork Chamber of Commerce</h1>
-          <div class="m">Pride & Progress</div>
-        </section>
-      </header>
-      <nav>
-        <ul class="navigation">
-          <li><a class="ham" href="#">Menu</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="spanishFork.html">Spanish Fork</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="join.html">Join</a></li>
-          </ul>
-      </nav>
-      <main>
-        <form action="thanks.html" method="get">
-          <fieldset>
-            <label
-              >First Name*<input
-                type="text"
-                name="name"
-                pattern="^[a-zA-Z]{5,}"
-                required="required"
-            /></label>
-
-            <label
-              >Last Name*<input
-                type="text"
-                name="name"
-                pattern="^[a-zA-Z]{5,}"
-                required="required"
-            /></label>
-
-            <label
-              >Title<input
-                type="text"
-                name="name"
-                pattern="^[a-zA-Z]{5,}"
-            /></label>
-  
-            <label
-              >Email*<input type="email" name="email" placeholder="@gmail.com" required="required"
-            /></label>
-  
-            <label
-              >Phone Number<input type="tel" name="phone"
-            /></label>
-           
-            <label
-            >Business Name*<input
+    <header>
+      <picture>
+        <img src="images/chamber.png" alt="Chamber of Commerce logo" />
+      </picture>
+      <section class="headings">
+        <h1>Spanish Fork Chamber of Commerce</h1>
+        <div class="m">Pride & Progress</div>
+      </section>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a class="ham" href="#">Menu</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="spanishFork.html">Spanish Fork</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+    <main>
+      <form action="thanks.html" method="get">
+        <fieldset>
+          <label
+            >First Name*:<input
               type="text"
               name="name"
               pattern="^[a-zA-Z]{5,}"
               required="required"
           /></label>
-          <div class="submission">
-            <input type="submit" value="Submit" />
-          </div>
-        </form>
-      </main>
+          <label
+            >Last Name*:<input
+              type="text"
+              name="name"
+              pattern="^[a-zA-Z]{5,}"
+              required="required"
+          /></label>
+          <label
+            >Title:<input type="text" name="name" pattern="^[a-zA-Z]{5,}"
+          /></label>
+          <label
+            >Email*:<input
+              type="email"
+              name="email"
+              placeholder="@gmail.com"
+              required="required"
+          /></label>
+          <label>Cell Phone:<input type="tel" name="phone" /></label>
+          <label
+            >Business Name*:<input
+              type="text"
+              name="name"
+              pattern="^[a-zA-Z]{5,}"
+              required="required"
+          /></label>
+          <label
+            >Business Address:<input
+              type="text"
+              name="name"
+              pattern="^[a-zA-Z]{5,}"
+          /></label>
+          <label
+            >Business Website:<input type="url" id="homepage" name="homepage"
+          /></label>
+          <label
+            >Description<textarea id="comments" name="comments"></textarea>
+          </label>
+          <div class="submission"><input type="submit" value="Submit" /></div>
+        </fieldset>
+      </form>
+    </main>
     <footer>
-      <div class = "info">
-      &copy; <span id="theyear"></span> | Spencer Carillo | Idaho |
-      Last Modified: <span id="lastmod"></span>
-    </div>
+      <div class="info">
+        &copy; <span id="theyear"></span> | Spencer Carillo | Spanish Fork | Last
+        Modified: <span id="lastmod"></span>
+        <a href="resources.html">Resources</a>
+      </div>
     </footer>
     <script src="js/index.js"></script>
   </body>

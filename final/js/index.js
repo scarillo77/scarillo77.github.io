@@ -55,3 +55,17 @@ fetch(requestURL)
       document.querySelector(".business").appendChild(card);
     }
   });
+// API
+const townID = 5781860;
+const weatherURL =
+  "https://api.openweathermap.org/data/2.5/weather?id=5781860&units=imperial&appid=1b69c9b06ec079ff6ab30f6dbb3f8d8b";
+
+fetch(weatherURL)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    document.querySelector("#curr-weather").textContent =
+      jsObject.weather[0].description;
+    document.querySelector("#temp").textContent = jsObject.main.temp.toFixed(1);
+    document.querySelector("#humidity").textContent =
+      jsObject.main.humidity + "%";
+  });
