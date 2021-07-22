@@ -35,37 +35,44 @@
       <main>
         <form action="thanks.html" method="get">
           <fieldset>
-            <legend>Your Information</legend>
             <label
-              >Name*<input
+              >First Name*<input
                 type="text"
                 name="name"
                 pattern="^[a-zA-Z]{5,}"
-                required=""
+                required="required"
+            /></label>
+
+            <label
+              >Last Name*<input
+                type="text"
+                name="name"
+                pattern="^[a-zA-Z]{5,}"
+                required="required"
+            /></label>
+
+            <label
+              >Title<input
+                type="text"
+                name="name"
+                pattern="^[a-zA-Z]{5,}"
             /></label>
   
             <label
-              >Email<input type="email" name="email" placeholder="@gmail.com"
+              >Email*<input type="email" name="email" placeholder="@gmail.com" required="required"
             /></label>
   
             <label
-              >Phone Number*<input type="tel" name="phone" required=""
+              >Phone Number<input type="tel" name="phone"
             /></label>
-  
+           
             <label
-              >Zip Code*<input type="number" name="zip" id="zip" required=""
-            /></label>
-          </fieldset>
-          <fieldset>
-            <legend>Storm Info</legend>
-            <label for="start">Storm date:</label>
-            <input
-              type="date"
-              id="storm"
-              name="trip-start"
-              min="1998-01-01"
-              max="2021-12-31"
-            />
+            >Business Name*<input
+              type="text"
+              name="name"
+              pattern="^[a-zA-Z]{5,}"
+              required="required"
+          /></label>
   
             <label for="storm-type-choice">Storm Type:</label>
             <input
@@ -82,35 +89,6 @@
               <option value="Tornado"></option>
             </datalist>
   
-            <label class="flexly" for="rating"
-              >Storm Severity: &nbsp;&nbsp;&nbsp;
-              <input
-                type="range"
-                id="rating"
-                value="5"
-                min="1"
-                max="10"
-                step="1"
-                list="tickmarks"
-                oninput="adjustRating(this.value)"
-                onchange="adjustRating(this.value)"
-              />
-              <span id="ratingvalue">5</span>
-            </label>
-  
-            <datalist id="tickmarks">
-              <option value="0"></option>
-              <option value="1"></option>
-              <option value="2"></option>
-              <option value="3"></option>
-              <option value="4"></option>
-              <option value="5"></option>
-              <option value="6"></option>
-              <option value="7"></option>
-              <option value="8"></option>
-              <option value="9"></option>
-              <option value="10"></option>
-            </datalist>
   
             <label>
               <select
@@ -145,7 +123,7 @@
             <legend>Additional Info</legend>
             <label
               >Further Storm Details
-              <br />
+              <br/>
               <textarea id="comments" name="comments"></textarea>
             </label>
           </fieldset>

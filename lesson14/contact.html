@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title> Contact - Spanish Fork Chamber of Commerce</title>
-    <meta name="description" content="Contact page for the Spanish Fork Chamber of Commerce" />
+    <title>Contact - Spanish Fork Chamber of Commerce</title>
+    <meta
+      name="description"
+      content="Contact page for the Spanish Fork Chamber of Commerce"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -12,32 +15,78 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-      <header>
-        <picture>
-          <img src="images/chamber.png" alt="Chamber of Commerce logo" />
-        </picture>
-        <section class="headings">
-          <h1>Spanish Fork Chamber of Commerce</h1>
-          <div class="m">Pride & Progress</div>
-        </section>
-      </header>
-      <nav>
-        <ul class="navigation">
-          <li><a class="ham" href="#">Menu</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="spanishfork.html">Spanish Fork</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="join.html">Join</a></li>
-          </ul>
-      </nav>
-      <main>
-      </main>
+    <header>
+      <picture>
+        <img src="images/chamber.png" alt="Chamber of Commerce logo" />
+      </picture>
+      <section class="headings">
+        <h1>Spanish Fork Chamber of Commerce</h1>
+        <div class="m">Pride & Progress</div>
+      </section>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a class="ham" href="#">Menu</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="spanishfork.html">Spanish Fork</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+    <main>
+      <article>
+        <h2>Contact Information</h2>
+        <ul>
+          <li>✉ car16104@byui.edu</li>
+          <li>☎ 208-994-2547</li>
+          <li>2048 E 280 S, Spanish Fork, Utah 84660</li>
+          <li><a href="https://www.facebook.com/">Facebook</a></li>
+          <li><a href="https://www.instagram.com/">Instagram</a></li>
+        </ul>
+      </article>
+      <fieldset>
+        <h2>Enter Contact Info</h2>
+        <label
+          >Name*<input
+            type="text"
+            name="name"
+            pattern="^[a-zA-Z]{8,}"
+            required=""
+        /></label>
+
+        <label
+          >Email<input type="email" name="email" placeholder="@gmail.com"
+        /></label>
+
+        <label
+          >Phone Number*<input type="tel" name="phone" required=""
+        /></label>
+        <label>
+          Comments
+          <textarea id="comments" name="comments"></textarea>
+        </label>
+      </fieldset>
+      <div class="submission">
+        <input type="submit" value="Submit" />
+      </div>
+      <article>
+        <h2>Spansih Fork</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97644.31488082968!2d-111.70143817559311!3d40.11142640605118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874db9d7dc27d89d%3A0x8b6bd315d9f959d0!2sSpanish%20Fork%2C%20UT%2084660!5e0!3m2!1sen!2sus!4v1626911033268!5m2!1sen!2sus"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </article>
+    </main>
     <footer>
-      <div class = "info">
-      &copy; <span id="theyear"></span> | Spencer Carillo | Idaho |
-      Last Modified: <span id="lastmod"></span>
-    </div>
+      <div class="info">
+        &copy; <span id="theyear"></span> | Spencer Carillo | Idaho | Last
+        Modified: <span id="lastmod"></span>
+      </div>
     </footer>
     <script src="js/index.js"></script>
   </body>
