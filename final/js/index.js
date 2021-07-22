@@ -33,20 +33,20 @@ fetch(requestURL)
 
     for (let i = 0; i < business.length; i++) {
       let card = document.createElement("div");
-      let name = document.createElement("h2");
+      let name = document.createElement("p");
       let address = document.createElement("p");
       let images = document.createElement("img");
       let siteurl = document.createElement("p");
       let phone = document.createElement("p");
 
-      h2.textContent = business[i].name;
+      name.textContent = business[i].name;
       address.textContent = "Address:" + business[i].address;
       phone.textContent = "Phone Number:" + business[i].phone;
       siteurl.textContent = business[i].currentPopulation;
       images.setAttribute("src", business[i].photo);
       images.setAttribute("alt", "A photo of " + business[i].name);
 
-      card.appendChild(h2);
+      card.appendChild(name);
       card.appendChild(address);
       card.appendChild(phone);
       card.appendChild(siteurl);
